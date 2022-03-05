@@ -153,18 +153,24 @@
   transform: scale(0.5) translateY(-15px);
 }
 
+
 .menu {
   position: absolute;
   top: 0;
   right: 0;
   width: 300px;
   height: 100%;
-  padding-left: 5px;
+  padding-left: 50px;
   padding-top: 40px;
   
   display: flex;
   align-items: top;
   justify-content: center;
+}
+
+.menu .icon {
+
+  height: 50px;
 }
 
 .menu ul {
@@ -181,6 +187,87 @@
 .menu ul li a:hover {
   color: var(--overlay-color);
 }
+
+button {
+  outline: none;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: auto;
+  cursor: pointer;
+  letter-spacing: 2px;
+  color: #fff;
+}
+/* .text a {
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #111;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+*/
+.group {
+  position: relative;
+  top: -35px;
+  right: 0;
+  left: -12px;
+  width: 200px;
+  height: 100%;
+  padding-left: 10px 30px;
+  padding-top: 40px;
+  margin-top: 10px;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  
+}
+
+.autofill-btn {
+  display: inline-block;
+  position: relative;
+  padding: 0.5em 1.0em;
+  font-size: 20px;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+}
+
+.autofill-btn span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 5px solid #d3005b;
+  text-align: center;
+}
+
+.autofill-btn span::before {
+  content: "";
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.5s linear;
+}
+
+.autofill-btn:hover span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: #d3005b;
+}
+
 
 @media(max-width: 798px) {
   .showcase,
