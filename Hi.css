@@ -61,6 +61,7 @@
 }
 
 
+
 .toggle {
   position: relative;
   width: 70px;
@@ -228,19 +229,7 @@ button {
   letter-spacing: 2px;
   color: #fff;
 }
-/* .text a {
-  display: inline-block;
-  font-size: 1em;
-  background: #fff;
-  padding: 10px 30px;
-  text-decoration: none;
-  color: #111;
-  margin-top: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: 0.2s;
-}
-*/
+
 .group {
   position: relative;
   top: -35px;
